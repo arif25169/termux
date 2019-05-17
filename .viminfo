@@ -243,36 +243,164 @@ $arif25169
 # global variables:
 
 # File marks:
-'0  36  4  ~/.gitignore
-|4,48,36,4,1558118719,"~/.gitignore"
-'1  1  0  ~/.tmux.conf
-|4,49,1,0,1558118407,"~/.tmux.conf"
-'2  11  19  ~/.zshrc
-|4,50,11,19,1558118390,"~/.zshrc"
-'3  1  47  ~/.termux/termux.properties
-|4,51,1,47,1558118082,"~/.termux/termux.properties"
-'4  1  74  ~/.termux/termux.properties
-|4,52,1,74,1558118017,"~/.termux/termux.properties"
+'0  10  0  ~/README.md
+|4,48,10,0,1558119108,"~/README.md"
+'1  43  7  ~/.gitignore
+|4,49,43,7,1558119040,"~/.gitignore"
+'2  119  0  ~/nginx.txt
+|4,50,119,0,1558118858,"~/nginx.txt"
+'3  36  4  ~/.gitignore
+|4,51,36,4,1558118719,"~/.gitignore"
+'4  36  4  ~/.gitignore
+|4,52,36,4,1558118719,"~/.gitignore"
 '5  1  0  ~/.tmux.conf
-|4,53,1,0,1558117956,"~/.tmux.conf"
-'6  9  2  ~/README.md
-|4,54,9,2,1558117943,"~/README.md"
-'7  8  0  ~/.gitignore
-|4,55,8,0,1558117432,"~/.gitignore"
-'8  8  0  ~/.gitignore
-|4,56,8,0,1558117432,"~/.gitignore"
-'9  11  35  ~/.zshrc
-|4,57,11,35,1558117413,"~/.zshrc"
+|4,53,1,0,1558118407,"~/.tmux.conf"
+'6  11  19  ~/.zshrc
+|4,54,11,19,1558118390,"~/.zshrc"
+'7  1  47  ~/.termux/termux.properties
+|4,55,1,47,1558118082,"~/.termux/termux.properties"
+'8  1  74  ~/.termux/termux.properties
+|4,56,1,74,1558118017,"~/.termux/termux.properties"
+'9  1  0  ~/.tmux.conf
+|4,57,1,0,1558117956,"~/.tmux.conf"
 
 # Jumplist (newest first):
+-'  10  0  ~/README.md
+|4,39,10,0,1558119108,"~/README.md"
+-'  1  0  ~/README.md
+|4,39,1,0,1558119083,"~/README.md"
+-'  43  7  ~/.gitignore
+|4,39,43,7,1558119040,"~/.gitignore"
+-'  43  7  ~/.gitignore
+|4,39,43,7,1558119040,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1558119010,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1558119010,"~/.gitignore"
+-'  119  0  ~/nginx.txt
+|4,39,119,0,1558118858,"~/nginx.txt"
+-'  119  0  ~/nginx.txt
+|4,39,119,0,1558118858,"~/nginx.txt"
+-'  119  0  ~/nginx.txt
+|4,39,119,0,1558118858,"~/nginx.txt"
+-'  119  0  ~/nginx.txt
+|4,39,119,0,1558118858,"~/nginx.txt"
+-'  1  0  ~/nginx.txt
+|4,39,1,0,1558118853,"~/nginx.txt"
+-'  1  0  ~/nginx.txt
+|4,39,1,0,1558118853,"~/nginx.txt"
+-'  1  0  ~/nginx.txt
+|4,39,1,0,1558118853,"~/nginx.txt"
+-'  1  0  ~/nginx.txt
+|4,39,1,0,1558118853,"~/nginx.txt"
 -'  36  4  ~/.gitignore
 |4,39,36,4,1558118719,"~/.gitignore"
+-'  36  4  ~/.gitignore
+|4,39,36,4,1558118719,"~/.gitignore"
+-'  36  4  ~/.gitignore
+|4,39,36,4,1558118719,"~/.gitignore"
+-'  36  4  ~/.gitignore
+|4,39,36,4,1558118719,"~/.gitignore"
+-'  36  4  ~/.gitignore
+|4,39,36,4,1558118719,"~/.gitignore"
+-'  36  4  ~/.gitignore
+|4,39,36,4,1558118719,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1558118695,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1558118695,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1558118695,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1558118695,"~/.gitignore"
 -'  1  0  ~/.tmux.conf
 |4,39,1,0,1558118407,"~/.tmux.conf"
 -'  1  0  ~/.tmux.conf
 |4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1558118407,"~/.tmux.conf"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
+-'  11  19  ~/.zshrc
+|4,39,11,19,1558118390,"~/.zshrc"
 -'  11  19  ~/.zshrc
 |4,39,11,19,1558118390,"~/.zshrc"
 -'  11  19  ~/.zshrc
@@ -289,190 +417,84 @@ $arif25169
 |4,39,1,0,1558118295,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1558118295,"~/.zshrc"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  47  ~/.termux/termux.properties
-|4,39,1,47,1558118082,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  74  ~/.termux/termux.properties
-|4,39,1,74,1558118017,"~/.termux/termux.properties"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558117956,"~/.tmux.conf"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
--'  9  2  ~/README.md
-|4,39,9,2,1558117943,"~/README.md"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1558118295,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
 
+> ~/README.md
+	*	1558119107	0
+	"	10	0
+	^	10	0
+	.	9	3
+	+	1	22
+	+	1	23
+	+	1	22
+	+	3	26
+	+	4	25
+	+	1	1
+	+	16	0
+	+	1	2
+	+	5	2
+	+	133	289
+	+	16	19
+	+	16	10
+	+	26	2
+	+	14	3
+	+	15	0
+	+	9	3
+
 > ~/.gitignore
-	*	1558118717	0
-	"	36	4
-	^	36	5
-	.	36	4
+	*	1558119038	0
+	"	43	7
+	^	43	8
+	.	43	7
 	+	13	3
 	+	2	58
 	+	2	9
@@ -496,6 +518,15 @@ $arif25169
 	+	39	0
 	+	38	1
 	+	36	4
+	+	40	7
+	+	43	7
+
+> ~/nginx.txt
+	*	1558118857	0
+	"	119	0
+	^	119	0
+	.	118	1
+	+	118	1
 
 > ~/.tmux.conf
 	*	1558118404	0
@@ -540,27 +571,6 @@ $arif25169
 	+	2	0
 	+	2	32
 	+	1	72
-
-> ~/README.md
-	*	1558117943	0
-	"	9	2
-	^	9	3
-	.	10	0
-	+	1	22
-	+	1	23
-	+	1	22
-	+	3	26
-	+	4	25
-	+	1	1
-	+	11	0
-	+	1	2
-	+	5	2
-	+	128	289
-	+	11	19
-	+	11	10
-	+	21	2
-	+	9	3
-	+	10	0
 
 > ~/.zcompdump-localhost-5.7.1
 	*	1558117180	0

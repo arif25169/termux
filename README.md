@@ -3,6 +3,11 @@ ctrl+d = save and exit
 ctrl+q = not save and exit
 ctrl+s = save and not exit
 ```
+##Git 
+```
+git rm -r --cached .idea/
+```
+
 ##Remoce Dir Recursive
 ```
 find ~/ -type d -name ".git" -exec rm -rf '{}' +

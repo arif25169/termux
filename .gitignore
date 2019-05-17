@@ -37,3 +37,7 @@ star/
 sd/
 sd
 .zsh_history
+.cache/
+.cache
+.config
+.config/
