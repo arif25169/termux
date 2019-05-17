@@ -20,6 +20,20 @@
 $arif25169
 
 # Command Line History (newest to oldest):
+:PlugInstall
+|2,0,1558126770,,"PlugInstall"
+:!Pa
+|2,0,1558126628,,"!Pa"
+:!Cp
+|2,0,1558126609,,"!Cp"
+:!Pretty
+|2,0,1558126370,,"!Pretty"
+:paste
+|2,0,1558126301,,"paste"
+:cv
+|2,0,1558126278,,"cv"
+:cV
+|2,0,1558126273,,"cV"
 :%s/dxinef/arif25169
 |2,0,1558116739,,"%s/dxinef/arif25169"
 :%s/gitfolder
@@ -28,12 +42,8 @@ $arif25169
 |2,0,1558116696,,"%s/gitdirdown/gitfolder"
 :cp
 |2,0,1558114713,,"cp"
-:cv
-|2,0,1558114646,,"cv"
 :'<,'>cp
 |2,0,1558114621,,"'<,'>cp"
-:PlugInstall
-|2,0,1558114596,,"PlugInstall"
 :qa
 |2,0,1558114566,,"qa"
 :x
@@ -114,6 +124,8 @@ $arif25169
 |2,0,1555422742,,"set nu"
 
 # Search String History (newest to oldest):
+??\a
+|2,1,1558129828,63,"\\a"
 ? dxinef
 |2,1,1558116739,,"dxinef"
 ? gitfolder
@@ -144,357 +156,284 @@ $arif25169
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	ctrl+d = save and exit
-|3,0,0,0,1,0,1558114810,"ctrl+d = save and exit"
-""1	LINE	0
-	查看版本号
-|3,1,1,1,1,0,1558116638,"查看版本号"
-"2	LINE	0
-	查看帮助
-|3,0,2,1,1,0,1558116633,"查看帮助"
+"0	LINE	0
+	edit() {
+	    dot="$(cd "$(dirname "$0")"; pwd)"
+	    vim "$dot/$1"
+	}
+	   
+|3,0,0,1,5,0,1558129890,"edit() {","    dot=\"$(cd \"$(dirname \"$0\")\"; pwd)\"","    vim \"$dot/$1\"","}","   "
+"1	CHAR	0
+	
+	
+|3,0,1,0,2,0,1558126434,"",""
+"2	CHAR	0
+	
+	
+|3,0,2,0,2,0,1558126232,"",""
 "3	LINE	0
-	下载git仓库特定文件
-|3,0,3,1,1,0,1558116629,"下载git仓库特定文件"
+	    echo "Downloading $2 from  http://$1 "
+|3,0,3,1,1,0,1558125922,"    echo \"Downloading $2 from  http://$1 \""
 "4	LINE	0
-	下载git仓库某个目录下所有内容，并指定分支
-|3,0,4,1,1,0,1558116626,"下载git仓库某个目录下所有内容，并指定分支"
+	查看版本号
+|3,0,4,1,1,0,1558116638,"查看版本号"
 "5	LINE	0
+	查看帮助
+|3,0,5,1,1,0,1558116633,"查看帮助"
+"6	LINE	0
+	下载git仓库特定文件
+|3,0,6,1,1,0,1558116629,"下载git仓库特定文件"
+"7	LINE	0
+	下载git仓库某个目录下所有内容，并指定分支
+|3,0,7,1,1,0,1558116626,"下载git仓库某个目录下所有内容，并指定分支"
+"8	LINE	0
 	载git仓库内所有内容到指定目录
-|3,0,5,1,1,0,1558116620,"载git仓库内所有内容到指定目录"
-"6	CHAR	0
+|3,0,8,1,1,0,1558116620,"载git仓库内所有内容到指定目录"
+"9	CHAR	0
 	持下载一个git仓库的所有文件 (download total project)
 	- 支持下载一个git仓库的某个目录或文件 (specify sub path)
 	- 下载时可以指定branch (specify branch)
 	- 目前支持github/gitee
 	
 	
-|3,0,6,0,6,0,1558116567,"持下载一个git仓库的所有文件 (download total project)","- 支持下载一个git仓库的某个目录或文件 (specify sub path)","- 下载时可以指定branch (specify branch)","- 目前支持github/gitee","",""
-"7	LINE	0
-	一个用来下载git下文件的小工具。  
-|3,0,7,1,1,0,1558116540,"一个用来下载git下文件的小工具。  "
-"8	CHAR	0
-	if exists('g:loaded_system_copy') || v:version < 700
-	  finish
-	endif
-	let g:loaded_system_copy = 1
-	
-	let s:blockwise = 'blockwise visual'
-	let s:visual = 'visual'
-	let s:motion = 'motion'
-	let s:linewise = 'linewise'
-	let s:mac = 'mac'
-	let s:windows = 'windows'
-	let s:linux = 'linux'
-	
-	function! s:system_copy(type, ...) abort
-	  let mode = <SID>resolve_mode(a:type, a:0)
-	  let unnamed = @@
-	  if mode == s:linewise
-	    let lines = { 'start': line("'["), 'end': line("']") }
-	    silent exe lines.start . "," . lines.end . "y"
-	  elseif mode == s:visual || mode == s:blockwise
-	    silent exe "normal! `<" . a:type . "`>y"
-	  else
-	    silent exe "normal! `[v`]y"
-	  endif
-	  let command = s:CopyCommandForCurrentOS()
-	  silent call system(command, getreg('@'))
-	  echohl String | echon 'Copied to clipboard using: ' . command | echohl None
-	  let @@ = unnamed
-	endfunction
-	
-	function! s:system_paste() abort
-	  let command = <SID>PasteCommandForCurrentOS()
-	  put =system(command)
-	  echohl String | echon 'Pasted to vim using: ' . command | echohl None
-	endfunction
-	
-	function! s:resolve_mode(type, arg)
-	  let visual_mode = a:arg != 0
-	  if visual_mode
-	    return (a:type == '') ?  s:blockwise : s:visual
-	  elseif a:type == 'line'
-	    return s:linewise
-	  else
-	    return s:motion
-	  endif
-	endfunction
-	
-	function! s:currentOS()
-	  let os = substitute(system('uname'), '\n', '', '')
-	  let known_os = 'unknown'
-|3,0,8,0,50,0,1558113974,"if exists('g:loaded_system_copy') || v:version < 700","  finish","endif","let g:loaded_system_copy = 1","","let s:blockwise = 'blockwise visual'","let s:visual = 'visual'","let s:motion = 'motion'","let s:linewise = 'linewise'","let s:mac = 'mac'","let s:windows = 'windows'","let s:linux = 'linux'","","function! s:system_copy(type, ...) abort","  let mode = <SID>resolve_mode(a:type, a:0)","  let unnamed = @@",>25
-|<"  if mode == s:linewise","    let lines = { 'start': line(\"'[\"), 'end': line(\"']\") }","    silent exe lines.start . \",\" . lines.end . \"y\"","  elseif mode == s:visual || mode == s:blockwise","    silent exe \"normal! `<\" . a:type . \"`>y\"","  else","    silent exe \"normal! `[v`]y\"","  endif","  let command = s:CopyCommandForCurrentOS()","  silent call system(command, getreg('@'))","  echohl String | echon 'Copied to clipboard using: ' . command | echohl None",>20
-|<"  let @@ = unnamed","endfunction","","function! s:system_paste() abort","  let command = <SID>PasteCommandForCurrentOS()","  put =system(command)","  echohl String | echon 'Pasted to vim using: ' . command | echohl None","endfunction","","function! s:resolve_mode(type, arg)","  let visual_mode = a:arg != 0","  if visual_mode","    return (a:type == '') ?  s:blockwise : s:visual","  elseif a:type == 'line'","    return s:linewise","  else","    return s:motion","  endif","endfunction",>2
-|<"","function! s:currentOS()","  let os = substitute(system('uname'), '\\n', '', '')","  let known_os = 'unknown'"
-"9	CHAR	0
-	let s:myVar = "Linux"
-	if s:myVar =~? '^(.*Linux.*)\d\+'
-	  echo "yes"
-	else
-	  echo "no"
-	endif
-|3,0,9,0,6,0,1558112734,"let s:myVar = \"Linux\"","if s:myVar =~? '^(.*Linux.*)\\d\\+'","  echo \"yes\"","else","  echo \"no\"","endif"
-"-	CHAR	0
-	下
-|3,0,36,0,1,0,1558116571,"下"
+|3,0,9,0,6,0,1558116567,"持下载一个git仓库的所有文件 (download total project)","- 支持下载一个git仓库的某个目录或文件 (specify sub path)","- 下载时可以指定branch (specify branch)","- 目前支持github/gitee","",""
+""-	CHAR	0
+	  vim "$dot/$1"
+|3,1,36,0,1,0,1558129969,"  vim \"$dot/$1\""
 
 # global variables:
 
 # File marks:
-'0  10  0  ~/README.md
-|4,48,10,0,1558119108,"~/README.md"
-'1  43  7  ~/.gitignore
-|4,49,43,7,1558119040,"~/.gitignore"
-'2  119  0  ~/nginx.txt
-|4,50,119,0,1558118858,"~/nginx.txt"
-'3  36  4  ~/.gitignore
-|4,51,36,4,1558118719,"~/.gitignore"
-'4  36  4  ~/.gitignore
-|4,52,36,4,1558118719,"~/.gitignore"
-'5  1  0  ~/.tmux.conf
-|4,53,1,0,1558118407,"~/.tmux.conf"
-'6  11  19  ~/.zshrc
-|4,54,11,19,1558118390,"~/.zshrc"
-'7  1  47  ~/.termux/termux.properties
-|4,55,1,47,1558118082,"~/.termux/termux.properties"
-'8  1  74  ~/.termux/termux.properties
-|4,56,1,74,1558118017,"~/.termux/termux.properties"
-'9  1  0  ~/.tmux.conf
-|4,57,1,0,1558117956,"~/.tmux.conf"
+'0  44  0  ~/.gitignore
+|4,48,44,0,1558130506,"~/.gitignore"
+'1  173  6  ~/.zshrc
+|4,49,173,6,1558130202,"~/.zshrc"
+'2  174  35  ~/.zshrc
+|4,50,174,35,1558130139,"~/.zshrc"
+'3  174  35  ~/.zshrc
+|4,51,174,35,1558130139,"~/.zshrc"
+'4  174  1  ~/.zshrc
+|4,52,174,1,1558130097,"~/.zshrc"
+'5  174  1  ~/.zshrc
+|4,53,174,1,1558130097,"~/.zshrc"
+'6  32  0  ~/.bashrc
+|4,54,32,0,1558129851,"~/.bashrc"
+'7  32  0  ~/.bashrc
+|4,55,32,0,1558129851,"~/.bashrc"
+'8  1  0  ~/.gitconfig
+|4,56,1,0,1558129842,"~/.gitconfig"
+'9  1  0  ~/.gitconfig
+|4,57,1,0,1558129842,"~/.gitconfig"
 
 # Jumplist (newest first):
--'  10  0  ~/README.md
-|4,39,10,0,1558119108,"~/README.md"
--'  1  0  ~/README.md
-|4,39,1,0,1558119083,"~/README.md"
--'  43  7  ~/.gitignore
-|4,39,43,7,1558119040,"~/.gitignore"
--'  43  7  ~/.gitignore
-|4,39,43,7,1558119040,"~/.gitignore"
+-'  44  0  ~/.gitignore
+|4,39,44,0,1558130506,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1558119010,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558119010,"~/.gitignore"
--'  119  0  ~/nginx.txt
-|4,39,119,0,1558118858,"~/nginx.txt"
--'  119  0  ~/nginx.txt
-|4,39,119,0,1558118858,"~/nginx.txt"
--'  119  0  ~/nginx.txt
-|4,39,119,0,1558118858,"~/nginx.txt"
--'  119  0  ~/nginx.txt
-|4,39,119,0,1558118858,"~/nginx.txt"
--'  1  0  ~/nginx.txt
-|4,39,1,0,1558118853,"~/nginx.txt"
--'  1  0  ~/nginx.txt
-|4,39,1,0,1558118853,"~/nginx.txt"
--'  1  0  ~/nginx.txt
-|4,39,1,0,1558118853,"~/nginx.txt"
--'  1  0  ~/nginx.txt
-|4,39,1,0,1558118853,"~/nginx.txt"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  36  4  ~/.gitignore
-|4,39,36,4,1558118719,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558118695,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558118695,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558118695,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558118695,"~/.gitignore"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1558118407,"~/.tmux.conf"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
--'  11  19  ~/.zshrc
-|4,39,11,19,1558118390,"~/.zshrc"
+|4,39,1,0,1558130424,"~/.gitignore"
+-'  173  6  ~/.zshrc
+|4,39,173,6,1558130202,"~/.zshrc"
+-'  173  6  ~/.zshrc
+|4,39,173,6,1558130202,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558130148,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558130148,"~/.zshrc"
+-'  174  35  ~/.zshrc
+|4,39,174,35,1558130139,"~/.zshrc"
+-'  174  35  ~/.zshrc
+|4,39,174,35,1558130139,"~/.zshrc"
+-'  174  35  ~/.zshrc
+|4,39,174,35,1558130139,"~/.zshrc"
+-'  174  35  ~/.zshrc
+|4,39,174,35,1558130139,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558130107,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558130107,"~/.zshrc"
+-'  174  1  ~/.zshrc
+|4,39,174,1,1558130097,"~/.zshrc"
+-'  174  1  ~/.zshrc
+|4,39,174,1,1558130097,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558129875,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558118295,"~/.zshrc"
+|4,39,1,0,1558129875,"~/.zshrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  32  0  ~/.bashrc
+|4,39,32,0,1558129851,"~/.bashrc"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1558129842,"~/.gitconfig"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1558126797,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1558126790,"~/[Plugins]"
+-'  5  0  ~/[Plugins]
+|4,39,5,0,1558126790,"~/[Plugins]"
 
 # History of marks within files (newest to oldest):
 
-> ~/README.md
-	*	1558119107	0
-	"	10	0
-	^	10	0
-	.	9	3
-	+	1	22
-	+	1	23
-	+	1	22
-	+	3	26
-	+	4	25
-	+	1	1
-	+	16	0
-	+	1	2
-	+	5	2
-	+	133	289
-	+	16	19
-	+	16	10
-	+	26	2
-	+	14	3
-	+	15	0
-	+	9	3
-
 > ~/.gitignore
-	*	1558119038	0
-	"	43	7
-	^	43	8
-	.	43	7
+	*	1558130505	0
+	"	44	0
+	^	44	0
+	.	43	13
 	+	13	3
 	+	2	58
 	+	2	9
@@ -520,6 +459,204 @@ $arif25169
 	+	36	4
 	+	40	7
 	+	43	7
+	+	43	13
+
+> ~/.zshrc
+	*	1558130200	0
+	"	173	6
+	^	173	7
+	.	173	6
+	+	122	1
+	+	5	57
+	+	101	17
+	+	106	12
+	+	108	24
+	+	108	44
+	+	111	176
+	+	109	11
+	+	110	12
+	+	102	34
+	+	103	22
+	+	158	1
+	+	159	8
+	+	162	0
+	+	159	4
+	+	165	66
+	+	163	0
+	+	164	10
+	+	185	26
+	+	106	9
+	+	11	19
+	+	109	0
+	+	165	67
+	+	167	3
+	+	170	0
+	+	169	11
+	+	168	37
+	+	169	16
+	+	172	0
+	+	173	3
+	+	175	2
+	+	175	57
+	+	175	10
+	+	174	33
+	+	175	12
+	+	174	36
+	+	173	6
+	+	176	0
+	+	173	6
+
+> ~/.gitconfig
+	*	1558129837	0
+	"	1	0
+
+> ~/.bashrc
+	*	1558129796	0
+	"	32	0
+	^	26	27
+	.	26	26
+	+	1	33
+	+	1	34
+	+	2	0
+	+	2	32
+	+	3	0
+	+	29	9
+	+	3	0
+	+	1	14
+	+	2	12
+	+	1	13
+	+	3	0
+	+	28	0
+	+	3	12
+	+	28	0
+	+	3	25
+	+	4	24
+	+	25	32
+	+	21	6
+	+	22	6
+	+	23	6
+	+	24	6
+	+	25	32
+	+	21	10
+	+	22	10
+	+	23	11
+	+	24	10
+	+	25	11
+	+	5	29
+	+	6	30
+	+	7	16
+	+	13	0
+	+	9	4
+	+	8	175
+	+	8	15
+	+	8	174
+	+	7	15
+	+	26	26
+
+> ~/.vimrc
+	*	1558126763	0
+	"	1	0
+	^	34	2
+	.	34	1
+	+	1	23
+	+	1	0
+	+	1	35
+	+	1	0
+	+	1	16
+	+	1	13
+	+	1	15
+	+	1	0
+	+	1	24
+	+	1	19
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	23
+	+	1	9
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	21
+	+	1	32
+	+	1	0
+	+	1	30
+	+	1	0
+	+	1	95
+	+	1	0
+	+	1	95
+	+	1	105
+	+	1	0
+	+	1	40
+	+	1	0
+	+	1	42
+	+	1	0
+	+	1	21
+	+	1	1
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	14
+	+	30	26
+	+	31	0
+	+	30	12
+	+	31	21
+	+	32	12
+	+	31	12
+	+	31	15
+	+	32	8
+	+	31	14
+	+	35	1
+	+	36	1
+	+	37	1
+	+	38	2
+	+	39	1
+	+	40	1
+	+	25	30
+	+	22	1
+	+	25	32
+	+	26	0
+	+	25	32
+	+	26	0
+	+	27	0
+	+	26	6
+	+	31	38
+	+	32	0
+	+	33	0
+	+	32	0
+	+	33	0
+	+	32	11
+	+	33	10
+	+	32	33
+	+	33	33
+	+	26	27
+	+	41	0
+	+	32	1
+	+	33	1
+	+	34	1
+
+> ~/README.md
+	*	1558119107	0
+	"	10	0
+	^	10	0
+	.	9	3
+	+	1	22
+	+	1	23
+	+	1	22
+	+	3	26
+	+	4	25
+	+	1	1
+	+	16	0
+	+	1	2
+	+	5	2
+	+	133	289
+	+	16	19
+	+	16	10
+	+	26	2
+	+	14	3
+	+	15	0
+	+	9	3
 
 > ~/nginx.txt
 	*	1558118857	0
@@ -534,33 +671,6 @@ $arif25169
 	^	1	33
 	.	1	32
 	+	1	32
-
-> ~/.zshrc
-	*	1558118389	0
-	"	11	19
-	^	11	20
-	.	11	19
-	+	123	1
-	+	5	57
-	+	101	17
-	+	106	12
-	+	108	24
-	+	109	20
-	+	112	176
-	+	110	11
-	+	111	12
-	+	102	34
-	+	103	22
-	+	159	1
-	+	160	8
-	+	163	0
-	+	160	4
-	+	166	66
-	+	164	0
-	+	165	10
-	+	173	26
-	+	106	9
-	+	11	19
 
 > ~/.termux/termux.properties
 	*	1558118080	0
@@ -618,69 +728,6 @@ $arif25169
 	+	45	40
 	+	46	24
 
-> ~/.vimrc
-	*	1558114719	0
-	"	1	0
-	^	22	2
-	.	22	1
-	+	1	23
-	+	1	0
-	+	1	35
-	+	1	0
-	+	1	16
-	+	1	13
-	+	1	15
-	+	1	0
-	+	1	24
-	+	1	19
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	23
-	+	1	9
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	21
-	+	1	32
-	+	1	0
-	+	1	30
-	+	1	0
-	+	1	95
-	+	1	0
-	+	1	95
-	+	1	105
-	+	1	0
-	+	1	40
-	+	1	0
-	+	1	42
-	+	1	0
-	+	1	21
-	+	1	1
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	14
-	+	29	26
-	+	30	0
-	+	29	12
-	+	30	21
-	+	31	12
-	+	30	12
-	+	30	15
-	+	31	8
-	+	30	14
-	+	32	1
-	+	33	1
-	+	34	1
-	+	35	2
-	+	36	1
-	+	37	1
-	+	25	30
-	+	22	1
-
 > ~/blues/vim-system-copy/plugin/system_copy.vim
 	*	1558114047	0
 	"	1	0
@@ -706,56 +753,9 @@ $arif25169
 	*	1558110274	0
 	"	1251	0
 
-> ~/.gitconfig
-	*	1558108687	0
-	"	1	0
-
 > ~/.oh-my-zsh/oh-my-zsh.sh
 	*	1558103425	0
 	"	121	0
-
-> ~/.bashrc
-	*	1556998183	0
-	"	26	25
-	^	26	27
-	.	26	26
-	+	1	33
-	+	1	34
-	+	2	0
-	+	2	32
-	+	3	0
-	+	29	9
-	+	3	0
-	+	1	14
-	+	2	12
-	+	1	13
-	+	3	0
-	+	28	0
-	+	3	12
-	+	28	0
-	+	3	25
-	+	4	24
-	+	25	32
-	+	21	6
-	+	22	6
-	+	23	6
-	+	24	6
-	+	25	32
-	+	21	10
-	+	22	10
-	+	23	11
-	+	24	10
-	+	25	11
-	+	5	29
-	+	6	30
-	+	7	16
-	+	13	0
-	+	9	4
-	+	8	175
-	+	8	15
-	+	8	174
-	+	7	15
-	+	26	26
 
 > /usr/etc/nginx/nginx.conf
 	*	1556998084	0

@@ -40,4 +40,5 @@ sd
 .cache/
 .cache
 .config
-.config/
+.vim/plugged/
+

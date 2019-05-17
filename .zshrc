@@ -106,7 +106,6 @@ alias copy='termux-clipboard-set'
 alias gitx='gitfolder -u'
 alias tc='termux-chroot'
 alias ta='termux-chroot'
-alias zshrc='~/.zshrc'
 alias pretty='prettier --write'
 alias prettyc='prettier --check'
 alias playlist='youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0  --external-downloader aria2c --external-downloader-args "-c -j 5 -x 5 -s 5 -k 1M"'
@@ -164,6 +163,19 @@ downh() {
 down() {
     curl "$1" --output "$2"
     echo "Downloading $2 from  http://$1 "                        }
+
+edit() {
+    dot="$(cd "$(dirname "$0")"; pwd)"
+    vim "$dot/$1"
+}
+
+
+delr() { 
+  dot="$(cd "$(dirname "$0")"; pwd)"
+  find "$dot/$1" -type d -name "$2" -exec rm -rf '{}' + 
+}
+   
+   
 ## apt-get aliases
 alias ai='apt-get install'
 alias ar='apt-get remove'
