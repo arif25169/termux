@@ -1,0 +1,39 @@
+.ssh
+.gitconfig
+.weechat
+storage
+others
+projects
+www
+npm/
+.np*
+star/
+*star/
+.local/
+*.local/
+.npm/
+.*npm/
+coverage
+build
+node_modules
+stats.json
+*yarn.lock
+*package.json.lock
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+*.npm
+bin
+# custom files
+custom/
+# temp files directories
+cache/
+log/
+blues/
+blues
+star
+star/
+sd/
+sd
+.zsh_history
