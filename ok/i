@@ -1,0 +1,2 @@
+#!/bin/bash
+awk '{ gsub(/user(.*?);/,"user_name=\"rif\";")}1' t.txt

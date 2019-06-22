@@ -24,6 +24,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'neomake/neomake'
 Plug 'arif25169/termux-vim-copy'
 Plug 'Chiel92/vim-autoformat'
+Plug 'davidhalter/jedi-vim'
 " Initialize plugin system
 " Initialize plugin system
 call plug#end()

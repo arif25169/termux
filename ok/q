@@ -1,0 +1,9 @@
+#!/bin/bash
+rm m.txt
+rm f.txt
+nick=$(shuf -n 1 ~/First)
+user=$(shuf -n 1 ~/First)
+echo $nick
+echo $user
+awk  '{ gsub(/nick(.*?);/,"nick=\"'$nick'\";")}1' t.txt>m.txt
+awk  '{ gsub(/user(.*?);/,"user_name=\"'$user'\";")}1' m.txt>f.txt
