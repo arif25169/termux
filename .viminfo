@@ -11,17 +11,17 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/gitd
+~MSle0~/por
 
 # Last Substitute Search Pattern:
-~MSle0~&dxinef
+~MSle0&dxinef
 
 # Last Substitute String:
 $arif25169
 
 # Command Line History (newest to oldest):
 :PlugInstall
-|2,0,1558130559,,"PlugInstall"
+|2,0,1564760055,,"PlugInstall"
 :!Pa
 |2,0,1558126628,,"!Pa"
 :!Cp
@@ -124,6 +124,10 @@ $arif25169
 |2,0,1555422742,,"set nu"
 
 # Search String History (newest to oldest):
+?/por
+|2,1,1564767734,47,"por"
+?/anon
+|2,1,1564767700,47,"anon"
 ??\a
 |2,1,1558129828,63,"\\a"
 ? dxinef
@@ -204,233 +208,298 @@ $arif25169
 # global variables:
 
 # File marks:
-'0  1  0  ~/[Plugins]
-|4,48,1,0,1558130574,"~/[Plugins]"
-'1  44  0  ~/.gitignore
-|4,49,44,0,1558130506,"~/.gitignore"
-'2  173  6  ~/.zshrc
-|4,50,173,6,1558130202,"~/.zshrc"
-'3  174  35  ~/.zshrc
-|4,51,174,35,1558130139,"~/.zshrc"
-'4  174  35  ~/.zshrc
-|4,52,174,35,1558130139,"~/.zshrc"
-'5  174  1  ~/.zshrc
-|4,53,174,1,1558130097,"~/.zshrc"
-'6  174  1  ~/.zshrc
-|4,54,174,1,1558130097,"~/.zshrc"
-'7  32  0  ~/.bashrc
-|4,55,32,0,1558129851,"~/.bashrc"
-'8  32  0  ~/.bashrc
-|4,56,32,0,1558129851,"~/.bashrc"
-'9  1  0  ~/.gitconfig
-|4,57,1,0,1558129842,"~/.gitconfig"
+'0  212  0  /usr/etc/pure-ftpd.conf
+|4,48,212,0,1564767921,"/usr/etc/pure-ftpd.conf"
+'1  31  0  /usr/etc/pure-ftpd.conf
+|4,49,31,0,1564766859,"/usr/etc/pure-ftpd.conf"
+'2  31  0  /usr/etc/pure-ftpd.conf
+|4,50,31,0,1564766859,"/usr/etc/pure-ftpd.conf"
+'3  142  21  ~/.zshrc
+|4,51,142,21,1564766027,"~/.zshrc"
+'4  1  4  ~/.termux/termux.properties
+|4,52,1,4,1564761229,"~/.termux/termux.properties"
+'5  4  0  ~/[Plugins]
+|4,53,4,0,1564760700,"~/[Plugins]"
+'6  3  0  ~/[Plugins]
+|4,54,3,0,1558130574,"~/[Plugins]"
+'7  1  0  ~/[Plugins]
+|4,55,1,0,1558130574,"~/[Plugins]"
+'8  44  0  ~/.gitignore
+|4,56,44,0,1558130506,"~/.gitignore"
+'9  173  6  ~/.zshrc
+|4,57,173,6,1558130202,"~/.zshrc"
 
 # Jumplist (newest first):
--'  1  0  ~/[Plugins]
-|4,39,1,0,1558130574,"~/[Plugins]"
+-'  212  0  /usr/etc/pure-ftpd.conf
+|4,39,212,0,1564767921,"/usr/etc/pure-ftpd.conf"
+-'  77  31  /usr/etc/pure-ftpd.conf
+|4,39,77,31,1564767734,"/usr/etc/pure-ftpd.conf"
+-'  1  0  /usr/etc/pure-ftpd.conf
+|4,39,1,0,1564767700,"/usr/etc/pure-ftpd.conf"
+-'  31  0  /usr/etc/pure-ftpd.conf
+|4,39,31,0,1564766859,"/usr/etc/pure-ftpd.conf"
+-'  31  0  /usr/etc/pure-ftpd.conf
+|4,39,31,0,1564766859,"/usr/etc/pure-ftpd.conf"
+-'  413  15  /usr/etc/pure-ftpd.conf
+|4,39,413,15,1564766773,"/usr/etc/pure-ftpd.conf"
+-'  413  15  /usr/etc/pure-ftpd.conf
+|4,39,413,15,1564766773,"/usr/etc/pure-ftpd.conf"
+-'  391  30  /usr/etc/pure-ftpd.conf
+|4,39,391,30,1564766772,"/usr/etc/pure-ftpd.conf"
+-'  391  30  /usr/etc/pure-ftpd.conf
+|4,39,391,30,1564766772,"/usr/etc/pure-ftpd.conf"
+-'  389  42  /usr/etc/pure-ftpd.conf
+|4,39,389,42,1564766771,"/usr/etc/pure-ftpd.conf"
+-'  389  42  /usr/etc/pure-ftpd.conf
+|4,39,389,42,1564766771,"/usr/etc/pure-ftpd.conf"
+-'  365  41  /usr/etc/pure-ftpd.conf
+|4,39,365,41,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  288  40  /usr/etc/pure-ftpd.conf
+|4,39,288,40,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  286  2  /usr/etc/pure-ftpd.conf
+|4,39,286,2,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  365  41  /usr/etc/pure-ftpd.conf
+|4,39,365,41,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  288  40  /usr/etc/pure-ftpd.conf
+|4,39,288,40,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  286  2  /usr/etc/pure-ftpd.conf
+|4,39,286,2,1564766769,"/usr/etc/pure-ftpd.conf"
+-'  285  6  /usr/etc/pure-ftpd.conf
+|4,39,285,6,1564766768,"/usr/etc/pure-ftpd.conf"
+-'  285  6  /usr/etc/pure-ftpd.conf
+|4,39,285,6,1564766768,"/usr/etc/pure-ftpd.conf"
+-'  278  10  /usr/etc/pure-ftpd.conf
+|4,39,278,10,1564766767,"/usr/etc/pure-ftpd.conf"
+-'  278  10  /usr/etc/pure-ftpd.conf
+|4,39,278,10,1564766767,"/usr/etc/pure-ftpd.conf"
+-'  271  0  /usr/etc/pure-ftpd.conf
+|4,39,271,0,1564766765,"/usr/etc/pure-ftpd.conf"
+-'  271  0  /usr/etc/pure-ftpd.conf
+|4,39,271,0,1564766765,"/usr/etc/pure-ftpd.conf"
+-'  1  0  /usr/etc/pure-ftpd.conf
+|4,39,1,0,1564766606,"/usr/etc/pure-ftpd.conf"
+-'  142  21  ~/.zshrc
+|4,39,142,21,1564766027,"~/.zshrc"
+-'  142  21  ~/.zshrc
+|4,39,142,21,1564766027,"~/.zshrc"
+-'  142  21  ~/.zshrc
+|4,39,142,21,1564766027,"~/.zshrc"
+-'  142  21  ~/.zshrc
+|4,39,142,21,1564766027,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1564766012,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1564766012,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1564766012,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1564766012,"~/.zshrc"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  1  4  ~/.termux/termux.properties
+|4,39,1,4,1564761229,"~/.termux/termux.properties"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1564760700,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
-|4,39,2,0,1558130571,"~/[Plugins]"
--'  5  0  ~/[Plugins]
-|4,39,5,0,1558130571,"~/[Plugins]"
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1564760680,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1564760680,"~/[Plugins]"
 -'  3  0  ~/[Plugins]
-|4,39,3,0,1558130559,"~/[Plugins]"
+|4,39,3,0,1564760055,"~/[Plugins]"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1558130559,"~/.vimrc"
--'  44  0  ~/.gitignore
-|4,39,44,0,1558130506,"~/.gitignore"
--'  44  0  ~/.gitignore
-|4,39,44,0,1558130506,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558130424,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1558130424,"~/.gitignore"
--'  173  6  ~/.zshrc
-|4,39,173,6,1558130202,"~/.zshrc"
--'  173  6  ~/.zshrc
-|4,39,173,6,1558130202,"~/.zshrc"
--'  173  6  ~/.zshrc
-|4,39,173,6,1558130202,"~/.zshrc"
--'  173  6  ~/.zshrc
-|4,39,173,6,1558130202,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130148,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130148,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130148,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130148,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  174  35  ~/.zshrc
-|4,39,174,35,1558130139,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130107,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130107,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130107,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558130107,"~/.zshrc"
--'  174  1  ~/.zshrc
-|4,39,174,1,1558130097,"~/.zshrc"
--'  174  1  ~/.zshrc
-|4,39,174,1,1558130097,"~/.zshrc"
--'  174  1  ~/.zshrc
-|4,39,174,1,1558130097,"~/.zshrc"
--'  174  1  ~/.zshrc
-|4,39,174,1,1558130097,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558129875,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558129875,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558129875,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1558129875,"~/.zshrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  32  0  ~/.bashrc
-|4,39,32,0,1558129851,"~/.bashrc"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1558129842,"~/.gitconfig"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1558126797,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1558126797,"~/[Plugins]"
+|4,39,1,0,1564760055,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1564760055,"~/[Plugins]"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1564760055,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1564760055,"~/[Plugins]"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1564760055,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1564760055,"~/[Plugins]"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1564760055,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1564760055,"~/[Plugins]"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1564760055,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1564760055,"~/[Plugins]"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1564760055,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
+> /usr/etc/pure-ftpd.conf
+	*	1564767774	0
+	"	212	0
+	^	213	42
+	.	213	41
+	+	71	31
+	+	77	31
+	+	213	41
+
+> ~/.zshrc
+	*	1564766025	0
+	"	142	21
+	^	173	7
+	.	142	0
+	+	122	1
+	+	5	57
+	+	101	17
+	+	106	12
+	+	108	24
+	+	108	44
+	+	111	176
+	+	109	11
+	+	110	12
+	+	102	34
+	+	103	22
+	+	158	1
+	+	159	8
+	+	162	0
+	+	159	4
+	+	165	66
+	+	163	0
+	+	164	10
+	+	185	26
+	+	106	9
+	+	11	19
+	+	109	0
+	+	165	67
+	+	167	3
+	+	170	0
+	+	169	11
+	+	168	37
+	+	169	16
+	+	172	0
+	+	173	3
+	+	175	2
+	+	175	57
+	+	175	10
+	+	174	33
+	+	175	12
+	+	174	36
+	+	173	6
+	+	176	0
+	+	173	6
+	+	142	0
+
+> ~/.termux/termux.properties
+	*	1564761227	0
+	"	1	4
+	^	1	5
+	.	1	72
+	+	1	104
+	+	2	0
+	+	2	32
+	+	1	72
+
 > ~/.vimrc
-	*	1558130554	0
+	*	1564760050	0
 	"	1	0
 	^	34	2
 	.	34	1
@@ -544,51 +613,6 @@ $arif25169
 	+	43	7
 	+	43	13
 
-> ~/.zshrc
-	*	1558130200	0
-	"	173	6
-	^	173	7
-	.	173	6
-	+	122	1
-	+	5	57
-	+	101	17
-	+	106	12
-	+	108	24
-	+	108	44
-	+	111	176
-	+	109	11
-	+	110	12
-	+	102	34
-	+	103	22
-	+	158	1
-	+	159	8
-	+	162	0
-	+	159	4
-	+	165	66
-	+	163	0
-	+	164	10
-	+	185	26
-	+	106	9
-	+	11	19
-	+	109	0
-	+	165	67
-	+	167	3
-	+	170	0
-	+	169	11
-	+	168	37
-	+	169	16
-	+	172	0
-	+	173	3
-	+	175	2
-	+	175	57
-	+	175	10
-	+	174	33
-	+	175	12
-	+	174	36
-	+	173	6
-	+	176	0
-	+	173	6
-
 > ~/.gitconfig
 	*	1558129837	0
 	"	1	0
@@ -671,16 +695,6 @@ $arif25169
 	^	1	33
 	.	1	32
 	+	1	32
-
-> ~/.termux/termux.properties
-	*	1558118080	0
-	"	1	47
-	^	1	48
-	.	1	72
-	+	1	104
-	+	2	0
-	+	2	32
-	+	1	72
 
 > ~/.zcompdump-localhost-5.7.1
 	*	1558117180	0
