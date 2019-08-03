@@ -131,3 +131,6 @@ Change each 'foo' to 'bar', but ask for confirmation first.
 * ctrl+wv - Split windows vertically
 
 <span style="color:  #000000;;">[Another good vim commands cheatsheet](http://www.fprintf.net/vimCheatSheet.html) and a [vi introduction using the "cheat sheet" method](http://www-105.ibm.com/developerworks/education.nsf/linux-onlinecourse-bytitle/8b6edc18e0ec5fe4862569b5006e5ae1)</span>
+#Python Ftp
+pip install pyftpdlib
+pip install pysendfile
